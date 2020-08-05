@@ -8,6 +8,7 @@ import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 
 import './styles.css'
+import { Link } from 'react-router-dom';
 
 const Landing: React.FC = () => {
   return (
@@ -25,14 +26,14 @@ const Landing: React.FC = () => {
         />
 
         <div className="buttons-container">
-          <a href="" className="study">
+          <Link to="/study" className="study">
             <img src={studyIcon} alt="Estudar"/>
             Estudar
-          </a>
-          <a href="" className="give-classes">
-            <img src={giveClassesIcon} alt="Estudar"/>
-            Estudar
-          </a>
+          </Link>
+          <Link to="/give-classes" className="give-classes">
+            <img src={giveClassesIcon} alt="Dar aula"/>
+            Dar aula
+          </Link>
         </div>
 
         <span className="total-connections">
